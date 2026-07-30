@@ -1,8 +1,32 @@
 aid: liazon
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/liazon.png
 name: Liazon
-description: 'Liazon is a company surfaced as a portfolio company of bain-capital-ventures, bessemer-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: commerce. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: >-
+  Liazon was a Buffalo, New York based operator of private benefits exchanges,
+  best known for the Bright Choices Exchange, which helped small and mid-sized
+  employers move to a defined-contribution benefits model and let their employees
+  shop for health, dental, vision, life, and disability coverage through an online
+  marketplace. Backed by Bain Capital Ventures and Bessemer Venture Partners, the
+  company was acquired by Towers Watson — now WTW — and no longer operates as an
+  independent business. As of a 2026-07-19 probe, liazon.com publishes no A record
+  and serves no website over HTTP or HTTPS, while the domain's MX records resolve
+  to willistowerswatson-com.mail.protection.outlook.com and the registration is
+  held through MarkMonitor, indicating WTW retains the domain defensively rather
+  than operating a product on it. There is no Liazon developer portal,
+  documentation, API reference, SDK, or public API surface to catalog. This
+  profile is retained as an acquired-company record; enrichment beyond
+  domain-level DNS evidence is not applicable.
 url: https://raw.githubusercontent.com/api-evangelist/liazon/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +35,26 @@ x-backed-by:
 - bessemer-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: wtw
+x-acquired-evidence: liazon.com has no A record and serves no site; MX resolves to
+  willistowerswatson-com.mail.protection.outlook.com (probed 2026-07-19)
+x-domain: liazon.com
+x-domain-status: registered-no-website
+x-enrichment: not-applicable-no-public-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Commerce
+- Employee Benefits
+- Insurance
+- Health Insurance
+- Benefits Administration
+- Private Benefits Exchange
+- Acquired
+- WTW
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +62,5 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
-- type: Website
-  url: https://liazon.com/
+- type: DomainSecurity
+  url: security/liazon-domain-security.yml
