@@ -42,7 +42,7 @@ x-acquired-evidence: liazon.com has no A record and serves no site; MX resolves 
 x-domain: liazon.com
 x-domain-status: registered-no-website
 x-enrichment: not-applicable-no-public-surface
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
